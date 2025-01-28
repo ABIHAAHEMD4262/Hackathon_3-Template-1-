@@ -1,8 +1,10 @@
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import NewArrival from "@/components/NewArrival";
+import TopSelling from "@/components/TopSelling";
 import Fonts from "@/components/ui/fonts";
-import Products from "./products/page";
+
 
 
 
@@ -13,7 +15,8 @@ export default function Home() {
   <Header/>
   <Hero/>
   <Fonts/>
-  <Products/>
+  <NewArrival/>
+  <TopSelling/>
    </div>
   );
 }

@@ -16,7 +16,11 @@ export interface Product{
     discountPercent:number;
     new:boolean;
     colors:[];
-    sizes:[]
+    sizes:[];
+    slug:{
+        _type:"slug"
+        current:string;
+    };
 
 
 }
