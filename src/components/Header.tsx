@@ -12,7 +12,7 @@ const Header = () => {
         {/*Left */}
       <div className='flex justify-center items-center'>
       <SheetSide/>
-        <h1 className=' text-2xl sm:text-3xl font-extrabold pl-5'>SHOP.CO</h1>
+        <Link href={"/"}><h1 className=' text-2xl sm:text-3xl font-extrabold pl-5'>SHOP.CO</h1></Link>
       </div>
       {/*Navbar*/}
       <ul className='hidden md:block ' >
