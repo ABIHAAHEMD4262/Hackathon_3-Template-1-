@@ -11,10 +11,7 @@ export const projectId = assertValue(
   'Missing environment variable: NEXT_PUBLIC_SANITY_PROJECT_ID'
 )
 
-export const Clerk = assertValue(
-  process.env.CLERK_SECRET_KEY,
-  'Missing environment variable: CLERK_SECRET_KEY'
-)
+
 
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (v === undefined) {
