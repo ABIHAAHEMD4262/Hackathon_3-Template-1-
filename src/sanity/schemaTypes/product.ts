@@ -58,6 +58,11 @@ export default defineType({
             title:"New",
         },
         {
+            name:'inventory',
+            type:'number',
+            title:'Inventory'
+        },
+        {
             name:"colors",
             title:"Colors",
             type: 'array',

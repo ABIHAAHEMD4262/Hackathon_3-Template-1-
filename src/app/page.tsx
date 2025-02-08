@@ -15,6 +15,7 @@ export default function Home() {
   <Fonts/>
   <NewArrival/>
   <TopSelling/>
+ 
    </div>
   );
 }

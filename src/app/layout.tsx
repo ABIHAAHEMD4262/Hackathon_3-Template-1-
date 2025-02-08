@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
+import {ClerkProvider} from "@clerk/nextjs";
+import Footer from "@/components/Footer";
+import SubcribeToNewsletter from "@/components/SubcribeToNewsletter";
 
 
 const geistSans = Geist({
@@ -26,14 +29,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
        <AnnouncementBar/>
        <Header/>
-        {children}
+       {children}
+      <SubcribeToNewsletter/>
+       <Footer/>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

@@ -66,7 +66,7 @@ export function NavigationMenuDemo() {
               {components.map((component) => (
                 <ListItem
                   key={component.title}
-                  title={component.title}
+                  title={component.description}
                   href={component.href}
                 >
                   {component.description}
